@@ -19,6 +19,16 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 You can find the Github Repo here.
 
+## GIT Commands
+
+* git status [if all are in Red, execute next command]
+* git add .
+* git status [if all are in Green, execute next command]
+* git commit -m "Enter your message here"
+* git pull origin Development [if no more conflict, execute next command]
+* git push
+* Go to the bitbucket and create pull request, make sure left side branch slection is your own branch and right side branch selection should be Development always.
+
 ## Table of Contents
 
 * [Versions](#versions)
