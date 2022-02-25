@@ -22,7 +22,6 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   imports: [
@@ -40,7 +39,6 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    MenuComponent,
 
   ],
   providers: [],
