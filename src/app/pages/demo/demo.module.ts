@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoComponent } from './demo.component';
+import { ShubhamDemoComponent } from './shubham-demo/shubham-demo.component';
 
 
 @NgModule({
   declarations: [
-    DemoComponent
+    ShubhamDemoComponent
   ],
   imports: [
     CommonModule,

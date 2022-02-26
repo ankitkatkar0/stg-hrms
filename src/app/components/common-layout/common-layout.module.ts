@@ -3,19 +3,17 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonLayoutRoutes } from './common-layout.routing';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
-import { MatRippleModule } from '@angular/material/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatSelectModule } from '@angular/material/select';
 import { DashboardComponent } from 'app/pages/dashboard/dashboard.component';
 import { UserProfileComponent } from 'app/pages/user-profile/user-profile.component';
 import { TableListComponent } from 'app/pages/table-list/table-list.component';
 import { IconsComponent } from 'app/pages/icons/icons.component';
 import { NotificationsComponent } from 'app/pages/notifications/notifications.component';
 import { TypographyComponent } from 'app/pages/typography/typography.component';
-import { UpgradeComponent } from 'app/pages/upgrade/upgrade.component';
+import { MaterialModule } from 'app/material.module';
+import { DemoModule } from 'app/pages/demo/demo.module';
+import { DemoComponent } from 'app/pages/demo/demo.component';
+import { AdminComponent } from 'app/pages/admin/admin.component';
+import { EmployeeComponent } from 'app/pages/employee/employee.component';
 
 @NgModule({
   imports: [
@@ -23,12 +21,7 @@ import { UpgradeComponent } from 'app/pages/upgrade/upgrade.component';
     RouterModule.forChild(CommonLayoutRoutes),
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatRippleModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
-    MatTooltipModule,
+    MaterialModule
   ],
   declarations: [
     DashboardComponent,
@@ -37,7 +30,9 @@ import { UpgradeComponent } from 'app/pages/upgrade/upgrade.component';
     TypographyComponent,
     IconsComponent,
     NotificationsComponent,
-    UpgradeComponent,
+    DemoComponent,
+    AdminComponent,
+    EmployeeComponent
   ]
 })
 
