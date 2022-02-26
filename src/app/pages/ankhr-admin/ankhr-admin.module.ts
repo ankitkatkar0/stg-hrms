@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AnkhrAdminRoutingModule } from './ankhr-admin-routing.module';
-import { AnkhrAdminComponent } from '../ankhr-admin/ankhr-admin.component';
+import { AnkhrAdminComponent } from './ankhr-admin.component';
 
 
 @NgModule({

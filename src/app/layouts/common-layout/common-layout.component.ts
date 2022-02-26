@@ -8,11 +8,11 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import * as $ from "jquery";
 
 @Component({
-  selector: 'app-admin-layout',
-  templateUrl: './admin-layout.component.html',
-  styleUrls: ['./admin-layout.component.scss']
+  selector: 'app-common-layout',
+  templateUrl: './common-layout.component.html',
+  styleUrls: ['./common-layout.component.scss']
 })
-export class AdminLayoutComponent implements OnInit {
+export class CommonLayoutComponent implements OnInit {
   private _router: Subscription;
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
@@ -131,16 +131,16 @@ export class AdminLayoutComponent implements OnInit {
   ngAfterViewInit() {
       this.runOnRouteChange();
   }
-  isMaps(path){
-      var titlee = this.location.prepareExternalUrl(this.location.path());
-      titlee = titlee.slice( 1 );
-      if(path == titlee){
-          return false;
-      }
-      else {
-          return true;
-      }
-  }
+//   isMaps(path){
+//       var titlee = this.location.prepareExternalUrl(this.location.path());
+//       titlee = titlee.slice( 1 );
+//       if(path == titlee){
+//           return false;
+//       }
+//       else {
+//           return true;
+//       }
+//   }
   runOnRouteChange(): void {
     if (window.matchMedia(`(min-width: 960px)`).matches && !this.isMac()) {
       const elemMainPanel = <HTMLElement>document.querySelector('.main-panel');
