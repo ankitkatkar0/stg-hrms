@@ -4,13 +4,11 @@ import { CommonModule } from '@angular/common';
 import { DemoRoutingModule } from './demo-routing.module';
 import { ShubhamDemoComponent } from './shubham-demo/shubham-demo.component';
 
-
 @NgModule({
   declarations: [
     ShubhamDemoComponent
   ],
   imports: [
-    // CommonModule,
     DemoRoutingModule
   ]
 })

@@ -1,6 +1,5 @@
-<p>Demo works!</p>
-
-<li>
-    <a [routerLink]="'shubham-demo'" routerLinkActive="active">Casual</a>
-  </li>
-<router-outlet></router-outlet>
+<mat-tab-group [color]="'primary'" [backgroundColor]="'accent'">
+  <mat-tab [label]="[tabItem.label]" *ngFor="let tabItem of tabItems" [routerLink]="[tabItem.path]" routerLinkActive="active">
+    <router-outlet></router-outlet>
+  </mat-tab>
+</mat-tab-group>

@@ -24,7 +24,7 @@ import { EmployeeComponent } from 'app/pages/employee/employee.component';
     NotificationsComponent
   ],
   imports: [
-    // CommonModule,
+    CommonModule,
     // FormsModule,
     // ReactiveFormsModule,
     MaterialModule,

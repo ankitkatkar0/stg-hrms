@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+declare interface RouteInfo {
+  path: string;
+  label: string;
+}
+export const ROUTES: RouteInfo[] = [
+  { path: '/shubham-demo', label: 'Shubham'}
+];
 
 @Component({
   selector: 'app-demo',
@@ -6,8 +13,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
+  tabItems: any[];
 
-  constructor() { }
+  constructor() {
+    this.tabItems = ROUTES.filter(tabItem => tabItem);
+   }
 
   ngOnInit(): void {
   }

@@ -16,10 +16,10 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
-    CommonModule,
+    // CommonModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
+    // FormsModule,
+    // ReactiveFormsModule,
     HttpClientModule,
     ComponentsModule,
     RouterModule,
