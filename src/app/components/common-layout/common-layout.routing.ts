@@ -7,13 +7,7 @@ import { TypographyComponent } from 'app/pages/typography/typography.component';
 import { UserProfileComponent } from 'app/pages/user-profile/user-profile.component';
 
 export const CommonLayoutRoutes: Routes = [
-    { path: '', redirectTo: 'dashboard' },
-    { path: 'dashboard', component: DashboardComponent },
-    { path: 'user-profile', component: UserProfileComponent },
-    { path: 'table-list', component: TableListComponent },
-    { path: 'typography', component: TypographyComponent },
-    { path: 'icons', component: IconsComponent },
-    { path: 'notifications', component: NotificationsComponent },
+    { path: '', redirectTo: 'admin' },
     {
         path: 'admin',
         loadChildren: () => import('../../pages/admin/admin.module')
@@ -23,5 +17,16 @@ export const CommonLayoutRoutes: Routes = [
         path: 'employee',
         loadChildren: () => import('../../pages/employee/employee.module')
             .then(m => m.EmployeeModule)
-    }
+    },
+    {
+        path: 'demo',
+        loadChildren: () => import('../../pages/demo/demo.module')
+            .then(m => m.DemoModule)
+    },
+    { path: 'dashboard', component: DashboardComponent },
+    { path: 'user-profile', component: UserProfileComponent },
+    { path: 'table-list', component: TableListComponent },
+    { path: 'typography', component: TypographyComponent },
+    { path: 'icons', component: IconsComponent },
+    { path: 'notifications', component: NotificationsComponent },
 ];
