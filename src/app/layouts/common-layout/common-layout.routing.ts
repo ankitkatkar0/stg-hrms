@@ -27,10 +27,5 @@ export const CommonLayoutRoutes: Routes = [
         path: 'employee',
         loadChildren: () => import('../../pages/ankhr-employee/ankhr-employee.module')
             .then(m => m.AnkhrEmployeeModule)
-    },
-    {
-        path: 'learning',
-        loadChildren: () => import('../../learning/learning.module')
-            .then(m => m.LearningModule)
     }
 ];
