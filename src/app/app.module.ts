@@ -7,14 +7,16 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
+import { CommonLayoutComponent } from './components/common-layout/common-layout.component';
 
 import {
   AgmCoreModule
 } from '@agm/core';
-import { CommonLayoutComponent } from './components/common-layout/common-layout.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
+    CommonModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
