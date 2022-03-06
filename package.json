@@ -4,16 +4,17 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o"
   },
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.9"
+    "node": "16.13.1",
+    "npm": "8.1.2"
   },
   "private": true,
   "dependencies": {
@@ -48,7 +49,10 @@
     "rxjs": "6.6.3",
     "rxjs-compat": "6.6.3",
     "web-animations-js": "2.3.2",
-    "zone.js": "0.11.4"
+    "zone.js": "0.11.4",
+    "@angular/cli": "12.1.2",
+    "@angular/compiler-cli": "12.1.2",
+    "typescript": "4.3.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "12.1.2",
