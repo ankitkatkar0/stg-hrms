@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/hrms-material-dashboard-angular'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/hrms-material-dashboard-angular/hrms/'}),
+    res.sendFile('index.html', {root: 'dist/hrms-material-dashboard-angular/'}),
 );
 
 // Start the app by listening on the default Heroku port
